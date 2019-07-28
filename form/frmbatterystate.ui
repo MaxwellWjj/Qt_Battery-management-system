@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frmBatteryState</class>
+ <widget class="QWidget" name="frmBatteryState">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1186</width>
+    <height>736</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="1" colspan="2">
+    <layout class="QGridLayout" name="gridLayout_5">
+     <item row="1" column="3">
+      <widget class="QLabel" name="label_4">
+       <property name="font">
+        <font>
+         <family>微软雅黑 Light</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>电池4</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <family>微软雅黑 Light</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>电池1</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QLabel" name="label_3">
+       <property name="font">
+        <font>
+         <family>微软雅黑 Light</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>电池3</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <family>微软雅黑 Light</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>电池2</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="ProgressWater" name="soc_5">
+       <property name="value">
+        <number>60</number>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="ProgressWater" name="soc_2">
+       <property name="value">
+        <number>80</number>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="ProgressWater" name="soc_7">
+       <property name="value">
+        <number>60</number>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="ProgressWater" name="soc_4">
+       <property name="value">
+        <number>60</number>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="ProgressWater" name="soc_6">
+       <property name="value">
+        <number>60</number>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="ProgressWater" name="soc_1">
+       <property name="value">
+        <number>80</number>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="ProgressWater" name="soc_3">
+       <property name="value">
+        <number>60</number>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="ProgressWater" name="soc_8">
+       <property name="value">
+        <number>0</number>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_5">
+       <property name="font">
+        <font>
+         <family>微软雅黑 Light</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>电池5</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLabel" name="label_6">
+       <property name="font">
+        <font>
+         <family>微软雅黑 Light</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>电池6</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QLabel" name="label_7">
+       <property name="font">
+        <font>
+         <family>微软雅黑 Light</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>电池7</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="QLabel" name="label_8">
+       <property name="font">
+        <font>
+         <family>微软雅黑 Light</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>电池8</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="1">
+    <widget class="WaveChart" name="waveChart_6">
+     <property name="yStep">
+      <double>20.000000000000000</double>
+     </property>
+     <property name="title">
+      <string>电池6荷电状态曲线</string>
+     </property>
+     <property name="smooth">
+      <bool>true</bool>
+     </property>
+     <property name="pointColor">
+      <color>
+       <red>0</red>
+       <green>170</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="3">
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <widget class="WaveChart" name="waveChart_8">
+       <property name="xStep">
+        <double>20.000000000000000</double>
+       </property>
+       <property name="title">
+        <string>电池8荷电状态曲线</string>
+       </property>
+       <property name="smooth">
+        <bool>true</bool>
+       </property>
+       <property name="pointColor">
+        <color>
+         <red>255</red>
+         <green>255</green>
+         <blue>0</blue>
+        </color>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="2">
+    <widget class="WaveChart" name="waveChart_3">
+     <property name="yStep">
+      <double>20.000000000000000</double>
+     </property>
+     <property name="title">
+      <string>电池3荷电状态曲线</string>
+     </property>
+     <property name="smooth">
+      <bool>true</bool>
+     </property>
+     <property name="pointColor">
+      <color>
+       <red>0</red>
+       <green>170</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="0" column="0" rowspan="2">
+      <layout class="QGridLayout" name="gridLayout_10">
+       <item row="0" column="2" rowspan="4">
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="3" column="2">
+          <widget class="LightButton" name="health_1">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textColor">
+            <color>
+             <red>0</red>
+             <green>0</green>
+             <blue>255</blue>
+            </color>
+           </property>
+           <property name="bgColor">
+            <color>
+             <red>85</red>
+             <green>255</green>
+             <blue>127</blue>
+            </color>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="2">
+          <widget class="LightButton" name="health_3">
+           <property name="bgColor">
+            <color>
+             <red>85</red>
+             <green>255</green>
+             <blue>127</blue>
+            </color>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="2">
+          <widget class="LightButton" name="health_4">
+           <property name="bgColor">
+            <color>
+             <red>85</red>
+             <green>255</green>
+             <blue>127</blue>
+            </color>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="2">
+          <widget class="LightButton" name="health_2">
+           <property name="bgColor">
+            <color>
+             <red>85</red>
+             <green>255</green>
+             <blue>127</blue>
+            </color>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="3">
+          <widget class="Battery" name="battery_1">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>1</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="value">
+            <double>80.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="3">
+          <widget class="Battery" name="battery_2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>1</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="value">
+            <double>80.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="3">
+          <widget class="Battery" name="battery_3">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>1</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="value">
+            <double>60.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="3">
+          <widget class="Battery" name="battery_4">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>1</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="value">
+            <double>60.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_9">
+         <property name="font">
+          <font>
+           <family>微软雅黑 Light</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>电池1</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_10">
+         <property name="font">
+          <font>
+           <family>微软雅黑 Light</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>电池2</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_11">
+         <property name="font">
+          <font>
+           <family>微软雅黑 Light</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>电池3</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_12">
+         <property name="font">
+          <font>
+           <family>微软雅黑 Light</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>电池4</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="2">
+    <widget class="WaveChart" name="waveChart_7">
+     <property name="yStep">
+      <double>20.000000000000000</double>
+     </property>
+     <property name="title">
+      <string>电池7荷电状态曲线</string>
+     </property>
+     <property name="smooth">
+      <bool>true</bool>
+     </property>
+     <property name="pointColor">
+      <color>
+       <red>0</red>
+       <green>170</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3">
+    <layout class="QGridLayout" name="gridLayout_6">
+     <item row="3" column="1">
+      <widget class="LightButton" name="health_8">
+       <property name="bgColor">
+        <color>
+         <red>85</red>
+         <green>255</green>
+         <blue>127</blue>
+        </color>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="LightButton" name="health_7">
+       <property name="bgColor">
+        <color>
+         <red>85</red>
+         <green>255</green>
+         <blue>127</blue>
+        </color>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="LightButton" name="health_6">
+       <property name="bgColor">
+        <color>
+         <red>85</red>
+         <green>255</green>
+         <blue>127</blue>
+        </color>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="4">
+      <widget class="QLabel" name="label_16">
+       <property name="font">
+        <font>
+         <family>微软雅黑 Light</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>电池8</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QLabel" name="label_13">
+       <property name="font">
+        <font>
+         <family>微软雅黑 Light</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>电池5</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="Battery" name="battery_6">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>1</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="value">
+        <double>60.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="LightButton" name="health_5">
+       <property name="bgColor">
+        <color>
+         <red>85</red>
+         <green>255</green>
+         <blue>127</blue>
+        </color>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="4">
+      <widget class="QLabel" name="label_14">
+       <property name="font">
+        <font>
+         <family>微软雅黑 Light</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>电池6</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="Battery" name="battery_5">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>1</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="value">
+        <double>60.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="4">
+      <widget class="QLabel" name="label_15">
+       <property name="font">
+        <font>
+         <family>微软雅黑 Light</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>电池7</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="Battery" name="battery_7">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>1</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="value">
+        <double>60.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="Battery" name="battery_8">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>1</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="value">
+        <double>0.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="0">
+    <widget class="WaveChart" name="waveChart_1">
+     <property name="yStep">
+      <double>20.000000000000000</double>
+     </property>
+     <property name="title">
+      <string>电池1荷电状态曲线</string>
+     </property>
+     <property name="smooth">
+      <bool>true</bool>
+     </property>
+     <property name="pointColor">
+      <color>
+       <red>0</red>
+       <green>170</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="WaveChart" name="waveChart_5">
+     <property name="yStep">
+      <double>20.000000000000000</double>
+     </property>
+     <property name="title">
+      <string>电池5荷电状态曲线</string>
+     </property>
+     <property name="smooth">
+      <bool>true</bool>
+     </property>
+     <property name="pointColor">
+      <color>
+       <red>0</red>
+       <green>170</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="WaveChart" name="waveChart_2">
+     <property name="yStep">
+      <double>20.000000000000000</double>
+     </property>
+     <property name="title">
+      <string>电池2荷电状态曲线</string>
+     </property>
+     <property name="smooth">
+      <bool>true</bool>
+     </property>
+     <property name="pointColor">
+      <color>
+       <red>0</red>
+       <green>170</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3">
+    <widget class="WaveChart" name="waveChart_4">
+     <property name="yStep">
+      <double>20.000000000000000</double>
+     </property>
+     <property name="title">
+      <string>电池4荷电状态曲线</string>
+     </property>
+     <property name="smooth">
+      <bool>true</bool>
+     </property>
+     <property name="pointColor">
+      <color>
+       <red>0</red>
+       <green>170</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ProgressWater</class>
+   <extends>QWidget</extends>
+   <header>progresswater.h</header>
+  </customwidget>
+  <customwidget>
+   <class>WaveChart</class>
+   <extends>QWidget</extends>
+   <header>wavechart.h</header>
+  </customwidget>
+  <customwidget>
+   <class>Battery</class>
+   <extends>QWidget</extends>
+   <header>battery.h</header>
+  </customwidget>
+  <customwidget>
+   <class>LightButton</class>
+   <extends>QWidget</extends>
+   <header>lightbutton.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
